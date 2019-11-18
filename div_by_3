@@ -1,0 +1,11 @@
+import numpy as np
+
+J = np.arange(1,101).reshape(10,10)
+
+A = (J**2)
+
+D = (J**2)%3
+
+x,y = np.where(D == 0)
+
+Divby3 = A[x,y]
